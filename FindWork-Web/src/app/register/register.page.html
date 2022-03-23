@@ -1,0 +1,88 @@
+<ion-header [translucent]="true">
+  
+  <ion-toolbar>
+    <ion-title>
+  Register  
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <br><br>
+  <ion-item>
+    <ion-label>Username</ion-label>
+    <ion-input class="create1" placeholder="ป้อนข้อมูล" [(ngModel)]="myModel.userName"></ion-input>   
+  </ion-item>
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input class="create1" placeholder="ป้อนข้อมูล" [(ngModel)]="myModel.password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input class="create1" placeholder="ป้อนข้อมูล" [(ngModel)]="myModel.name"></ion-input>
+    <ion-label>Lastname</ion-label>
+    <ion-input class="create1" placeholder="ป้อนข้อมูล" [(ngModel)]="myModel.lastName"></ion-input>   
+  </ion-item>
+  <ion-item>
+    <ion-label>Nickname</ion-label>
+    <ion-input class="create1" placeholder="ป้อนข้อมูล" [(ngModel)]="myModel.nickName"></ion-input> 
+    <ion-label>Age</ion-label>
+    <ion-input class="create1" placeholder="ป้อนข้อมูล" [(ngModel)]="myModel.age"></ion-input>   
+  </ion-item>
+  <ion-item>
+    <ion-label>Gender</ion-label>
+    <ion-select placeholder="Select One" [(ngModel)]="myModel.gender">
+      <ion-select-option value="f">Female</ion-select-option>
+      <ion-select-option value="m">Male</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>เลือกประเภทช่าง</ion-label>
+            <ion-select value="ประเภทช่าง" [(ngModel)]="myModel.category"> 
+              <ion-select-option value="ช่าง1">ช่าง1</ion-select-option>
+              <ion-select-option value="ช่าง2">ช่าง2</ion-select-option>
+              <ion-select-option value="ช่าง3">ช่าง3</ion-select-option>
+              <ion-select-option value="ช่าง4">ช่าง4</ion-select-option>
+              <ion-select-option value="ช่าง5">ช่าง5</ion-select-option>
+              <ion-select-option value="ช่าง6">ช่าง6</ion-select-option>
+              <ion-select-option value="ช่าง7">ช่าง7</ion-select-option>
+              <ion-select-option value="ช่าง8">ช่าง8</ion-select-option>
+              <ion-select-option value="ช่าง9">ช่าง9</ion-select-option>
+              <ion-select-option value="ช่าง10">ช่าง10</ion-select-option>
+              <ion-select-option value="ช่าง11">ช่าง11</ion-select-option>
+              <ion-select-option value="ช่าง12">ช่าง12</ion-select-option>
+            </ion-select>
+     </ion-item> 
+     <ion-item class="custom-font">
+      <ion-label class="custom-font"> เลือกวันที่ </ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="myModel.brithDate" placeholder="Select Date"  class="custom-font">
+      </ion-datetime>
+    </ion-item>
+ 
+  
+     
+    <ion-item>
+      <ion-label>ที่อยู่</ion-label>
+      <ion-input class="create1" placeholder="ป้อนข้อมูล" [(ngModel)]="myModel.address"></ion-input>      
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Description</ion-label>
+      <ion-input class="create1" placeholder="ป้อนข้อมูล" [(ngModel)]="myModel.description"></ion-input>      
+    </ion-item>
+    
+  <ion-button color="success" (click)="Agree()" >Agree</ion-button>
+  <ion-item>
+    <ion-label floating>Profile Picture</ion-label>
+    <ion-input type="file" [id]="pic"></ion-input>
+  </ion-item>
+</ion-content>
+
+
+
+
