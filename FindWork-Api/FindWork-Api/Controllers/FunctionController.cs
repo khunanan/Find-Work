@@ -17,8 +17,8 @@ namespace FindWork_Api.Controllers
         IMongoCollection<Engineer_Model> CollectionEngineer;
         public FunctionController()
         {
-            db = new MongoClient("mongodb+srv://admin:1234@cluster0.hywcw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
-            var Data = db.GetDatabase("FWDB");
+            db = new MongoClient("mongodb+srv://admin:1234@cluster0.wc1p8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+            var Data = db.GetDatabase("FwDB");
             CollectionEngineer = Data.GetCollection<Engineer_Model>("Engineer");
         }
 

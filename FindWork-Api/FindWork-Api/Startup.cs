@@ -43,7 +43,7 @@ namespace FindWork_Api
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "FindWork_Api v1"));
             }
-            app.UseCors(b => b.WithOrigins("*").AllowAnyMethod().AllowAnyHeader());
+            app.UseCors(b => b.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseHttpsRedirection();
 
             app.UseRouting();
