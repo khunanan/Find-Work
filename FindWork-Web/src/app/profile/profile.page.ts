@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { APIService } from 'src/services/service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilePage implements OnInit {
 
-  constructor() { }
+  constructor( private svc: APIService) { }
 
   ngOnInit() {
   }
-
+  // GetdataOrder() {
+  //   this.svc.GetDataEngineerById(id).subscribe(it => {
+  //     console.log(it);
+  //     if (it) {
+  //       this.data = it
+  //     }
+  //   });
+  // }
 }
